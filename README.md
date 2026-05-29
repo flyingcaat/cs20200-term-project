@@ -12,7 +12,7 @@ You can select the menus using arrows and Spacebar. When you enter Harder!, type
 ### 3. Playing
 After making the board, you can start the game. 
 
-- '🟩' : Closes Cell
+- '🟩' : Closed Cell
 - '  ' : Empty Cell(No mines nearby)
 - Number (n) : There are n mines between adjacent 8 cells
 You can move your cursor with arrows. If you press space, the initial cell will open and you can start from there. 
