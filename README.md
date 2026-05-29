@@ -5,23 +5,27 @@ This project is a console-based Minesweeper game made with F#. The player will f
 There are two modes, basic and harder. In basic, the size of the board and the number of mines are fixed. Basic easy has 10 mines in 10*10 size board, and basic hard has 40 mines in 16*16 board. In harder, you can custom the size of board and number of mines. The maximum size would be 30*24, and there can be up to width * height - 10. A mine density of around 20-25% might give you a fun game. Also, you might guess the mines to solve the problem. 100% solvable board is only implemented in Basic boards. There will be no mines at the initial place you start, so you can start safe and have clues to use.
 
 # How to Play
-### 1. Start : Type "start dotnet run" on your terminal. There will open a new terminal window, and the game will start. If you are using Mac/Linux, type "dotnet run". 
-### 2. Menu : You can select the menus using arrows and Spacebar. When you enter Harder!, type the size and press enter. 
-### 3. Playing : After making the board, you can start the game. 
-    - '-' : Closes Cell
-    - '.' : Empty Cell(No mines nearby)
-    - Number (n) : There are n mines between adjacent 8 cells
-    You can move your cursor with arrows. If you press space, the initial cell will open and you can start from there. 
+### 1. Start
+Type "start dotnet run" on your terminal. There will open a new terminal window, and the game will start. If you are using Mac/Linux, type "dotnet run". 
+### 2. Menu
+You can select the menus using arrows and Spacebar. When you enter Harder!, type the size and press enter. 
+### 3. Playing
+After making the board, you can start the game. 
 
-    Controls 
+- '-' : Closes Cell
+- '.' : Empty Cell(No mines nearby)
+- Number (n) : There are n mines between adjacent 8 cells
+You can move your cursor with arrows. If you press space, the initial cell will open and you can start from there. 
+
+Controls 
     
-    **1) Arrows**
-    You can move your cursor with arrows.
+**1) Arrows**
+You can move your cursor with arrows.
 
-    **2) F(Flag)**
-    When you press F, the flag will be placed. If you press F to already flagged cell, then it will unflag.
+**2) F(Flag)**
+When you press F, the flag will be placed. If you press F to already flagged cell, then it will unflag.
 
-    **3) Spacebar** : There are two functions in Spacebar.
+**3) Spacebar** : There are two functions in Spacebar.
 
 (1) Opening : When you press spacebar to closed cell, it will open. If you open wrong cell, it will be gameover.
 
