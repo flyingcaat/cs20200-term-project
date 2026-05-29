@@ -8,7 +8,7 @@ There are two modes, basic and harder. In basic, the size of the board and the n
 ### 1. Start
 Type "start dotnet run" on your terminal. There will open a new terminal window, and the game will start. If you are using Mac/Linux, type "dotnet run". 
 ### 2. Menu
-You can select the menus using arrows and Spacebar. When you enter Harder!, type the size and press enter. 
+You can select the menus using arrows and Spacebar. When you enter Harder!, type the size and press enter to type next size. 
 ### 3. Playing
 After making the board, you can start the game. 
 
