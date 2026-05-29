@@ -35,8 +35,8 @@ For example, when you find 2 mines in below image and press spacebar at '2', the
 
 ![Before chording](image.png) will change into ![After chording](image-1.png)
 
-    **4) Backspace(delete key in Mac)** 
-    If you want to start a new game, press backspace. You can start from selecting modes.
+**4) Backspace(delete key in Mac)** 
+If you want to start a new game, press backspace. You can start from selecting modes.
 ### 4. Finish : If you open all the number cells without opening mine, you win and the game will be finished. If you open mine, that will be gameover. You can either start a new game by pressing 'Y' or exit by pressing 'N'.
 
 ## Font Problem
