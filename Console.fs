@@ -54,15 +54,26 @@ module Console =
                         if pos <> board.curpos then Console.ForegroundColor <- ConsoleColor.Red
                         Console.Write("🚩")  
                         Console.ResetColor()
-                    | Closed -> Console.Write(" -")
+                    | Closed -> Console.Write("🟩")
                     | Opened -> 
                         match cell.content with
                             | Mine -> 
                                 if pos <> board.curpos then Console.ForegroundColor <- ConsoleColor.Red
                                 Console.Write("💥")
                                 Console.ResetColor()
-                            | Number n -> Console.Write($" {n}")
-                            | Empty -> Console.Write(" .")
+                            | Number n -> 
+                                match n with
+                                | 1 -> Console.Write("１")
+                                | 2 -> Console.Write("２")
+                                | 3 -> Console.Write("３")
+                                | 4 -> Console.Write("４")
+                                | 5 -> Console.Write("５")
+                                | 6 -> Console.Write("６")
+                                | 7 -> Console.Write("７")
+                                | 8 -> Console.Write("８")
+                                | _ -> Console.Write("　")
+                                //Console.Write($" {n}")
+                            | Empty -> Console.Write("  ")
                 | None -> ()
                 Console.ResetColor()
             Console.WriteLine()
