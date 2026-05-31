@@ -2,7 +2,7 @@
 
 # Overview
 This project is a console-based Minesweeper game made with F#. The player will find the mines using keyboard. 
-There are two modes, basic and harder. In basic, the size of the board and the number of mines are fixed. Basic easy has 10 mines in 10*10 size board, and basic hard has 40 mines in 16*16 board. In harder, you can custom the size of board and number of mines. The maximum size would be 30*24, and there can be up to width * height - 10. A mine density of around 20-25% might give you a fun game. Also, you might guess the mines to solve the problem. 100% solvable board is only implemented in Basic boards. There will be no mines at the initial place you start, so you can start safe and have clues to use.
+There are two modes, basic and harder. In basic, the size of the board and the number of mines are fixed. Basic easy has 10 mines in 10x10 board, and basic hard has 40 mines in 16*16 board. In harder, you can custom the size of board and number of mines. The maximum size would be 30*24, and there can be up to width * height - 10. A mine density of around 20-25% might give you a fun game. Also, you might guess the mines to solve the problem. 100% solvable board is only implemented in Basic boards. There will be no mines at the initial place you start, so you can start safe and have clues to use.
 
 # How to Play
 ### 1. Start
@@ -33,14 +33,15 @@ When you press F, the flag will be placed. If you press F to already flagged cel
         
 For example, when you find 2 mines in below image and press spacebar at '2', then the upper two cells will open.
 
-![Before chording](image.png) will change into ![After chording](image-1.png)
+![Before chording](before.png) will change into ![After chording](after.png)
 
 **4) Backspace(delete key in Mac)** 
 If you want to start a new game, press backspace. You can start from selecting modes.
-### 4. Finish : If you open all the number cells without opening mine, you win and the game will be finished. If you open mine, that will be gameover. You can either start a new game by pressing 'Y' or exit by pressing 'N'.
+### 4. Finish 
+If you open all the number cells without opening mine, you win and the game will be finished. If you open mine, that will be gameover. You can either start a new game by pressing 'Y' or exit by pressing 'N'.
 
 ## Font Problem
-Maybe the emojis of mine and flag can broke to 'ㅁ' or '??'. This project used UTF-8 encoding for modern emoji rendering. If your console displays broken characters, it means your current terminal's font does not support these emojis.
+Maybe the emojis of mine and flag might break to 'ㅁ' or '??'. This project used UTF-8 encoding for modern emoji rendering. If your console displays broken characters, it means your current terminal's font does not support these emojis.
 
 **Solution 1: Use Windows Terminal (Recommended)**
 The standard Windows Command Prompt (`cmd.exe`) uses legacy text rendering. Please use **Windows Terminal** (default in Windows 11, or downloadable from the Microsoft Store). It fully supports UTF-8 and emoji rendering natively.
